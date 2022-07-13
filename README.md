@@ -1,2 +1,2 @@
 # casefiles
-dot files synced with stow
+Backup your dot-files using stow
