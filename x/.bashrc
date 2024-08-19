@@ -35,7 +35,8 @@ set -o vi
 [[ $- != *i* ]] && return
 
 ### PROMPT
-PS1='[\u@\h \W]\$ '
+PS1=' - \W  '
+#PS1='[\u@\h \W]\$ '
 
 ### PATH
 if [ -d "$HOME/.bin" ] ;
@@ -126,31 +127,11 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
-# git
-alias addup='git add -u'
-alias addall='git add .'
-alias branch='git branch'
-alias checkout='git checkout'
-alias clone='git clone'
-alias commit='git commit -m'
-alias fetch='git fetch'
-alias pull='git pull origin'
-alias push='git push origin'
-alias status='git status'
-alias tag='git tag'
-alias newtag='git tag -a'
-
 # Merge Xresources
 alias merge='xrdb -merge ~/.Xresources'
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-
-# gpg encryption
-# verify signature for isos
-alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
-# receive the key of a developer
-alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 alias ls='exa -la --icons --group-directories-first --color=auto'
 alias nv='nvim'
