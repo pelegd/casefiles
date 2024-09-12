@@ -79,6 +79,11 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+# set neovim as a manpager reader
+export MANPAGER="nvim +Man!"
+
+# fix for gentoo
+# shell fish
 # Aliases
 alias ls='exa -la --group-directories-first --icons --color'
 alias nv='nvim'

@@ -2,3 +2,4 @@
 [manager]
 show_hidden = true
 linemode = "size_and_mtime"
+ratio = [1, 2,  5]
