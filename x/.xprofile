@@ -1,0 +1,64 @@
+# Environment variables set everywhere
+export EDITOR="nvim"
+export TERMINAL="kitty"
+export BROWSER="firefox"
+export READER="zathura"
+export VISUAL="nvim"
+# export VIDEO="mpv"
+# export IMAGE="sxiv"
+# export COLORTERM="truecolor"
+# export OPENER="xdg-open"
+# export PAGER="less"
+# export WM="bspwm"
+
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# For QT Themes
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# load Xresources
+xrdb ~/.Xresources
+
+# Monitor Config
+# xrandr --auto --output DVI-D-0 --mode 2560x1440 --right-of HDMI-0
+
+# Don't Randomly Turn off monitor
+xset s off
+xset -dpms
+xset s noblank
+
+# toggle keyboard language
+setxkbmap us,il -option grp:alt_shift_toggle &
+
+# remap caps to escape
+setxkbmap -option caps:escape
+# swap escape and caps
+# setxkbmap -option caps:swapescape
+
+# mouse curser setup
+xsetroot -cursor_name -left_ptr &
+
+# Speedy keys
+xset r rate 210 40
+
+# Hide mouse when typing
+xbanish &
+
+# zsh config dir
+# export ZDOTDIR=$HOME/.config/zsh
+
+
+# Network Manager Applet
+nm-applet --indicator &
+
+# Bluetooth systray icon
+# blueman-applet &
+
+# helps with puls audio
+# pasystray &
+
+# Easy file sharing
+# pcloudcc -u chris.machine@pm.me -m ~/Cloud -d
