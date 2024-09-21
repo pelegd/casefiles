@@ -4,11 +4,11 @@
 source ~/.xprofile
 
 # screen resolution setup
-$HOME/.screenlayout/display.sh
+# $HOME/.screenlayout/display.sh
+#herbstclient detect_monitors
 
 # wallpaper setup
-killall "nitrogen"
-nitrogen --set-zoom-fill --restore &
+# nitrogen --set-zoom-fill --restore &
 
 # compositor
 killall "picom"
@@ -19,8 +19,8 @@ killall "dunst"
 dunst -conf ~/.config/dunst/dunstrc &
 
 # Screenshots
-flameshot &
+# flameshot &
 
 #### Window Manager Startup ####
-exec bspwm
+# exec bspwm
 # exec dwm
