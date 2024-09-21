@@ -8,7 +8,8 @@ hc emit_hook reload
 
 ## autostart ##
 xsetroot -solid '#5A8E3A'
-sh .screenlayout/display.sh
+#sh .screenlayout/display.sh
+herbstclient detect_monitors
 #picom &
 #nitrogen --restore &
 feh --bg-scale home/$USER/Pictures/walls/road-2.jpg 
