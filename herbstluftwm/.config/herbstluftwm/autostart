@@ -194,7 +194,7 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # hc set_monitors 1280x1024+0+0 1280x1024+1280+0
 # or simply:
 # hc detect_monitors
-hc set_monitors 1440x880+0+20
+# hc set_monitors 1440x880+0+20
 
 # find the panel
 # panel=~/.config/herbstluftwm/panel.sh
