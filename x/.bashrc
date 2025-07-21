@@ -36,6 +36,7 @@ set -o vi
 
 ### PROMPT
 PS1=' - \W  '
+### 󰕈   
 #PS1='[\u@\h \W]\$ '
 
 ### PATH
